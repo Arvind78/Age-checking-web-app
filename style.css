@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     font-family: 'Koulen', cursive; 
+   
+/* font-family: 'Oswald', sans-serif; */
+}
+body{
+  background-image: url("/pexels-gradienta-7130472.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.center{
+  border:2px solid black;
+ width: 60%;
+ border-radius: 10px;
+ padding: 40px;
+  margin-left:250px;
+ margin-top: 100px;
+ background: linear-gradient(to bottom left, #33ccff 50%, #ff99cc 71%);;
+
+ 
+}
+#Age{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+   outline-style: none;
+}
+#res{ 
+    width: 53%;
+    padding: 10px;
+    font-size:25px;
+    color: rgb(2, 2, 2);
+    border-radius: 5px;
+    outline-style: none;
+}
+#btn{
+  padding: 0px;
+   padding-left: 10px;
+   padding-right: 10px;
+  margin-left: 40%;
+  font-size: 25px;
+
+}
+h1{
+    font-size: 28px;
+    background: linear-gradient(to bottom, #33ccff -2%, #ff99cc 100%);
+   
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 3px;
+}
+#Year{
+    width: 22%;
+    padding: 10px;
+    border-radius: 5px;
+    outline-style: none;
+    font-size:25px;
+    text-align:center;
+  color: black;
+background-color: yellow;
+
+}
+label{
+    font-size:20px;
+}
+ 
+
+
+ 

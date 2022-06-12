@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Age Check Web Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+     
+   
+    <div class="center">	
+      
+        <h1 Style="text-align:center">Voting Check Age  Web Application <i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i></h1>
+<label>Age:</label>
+
+   
+  <input type="text" id="Age" step="any"  placeholder="Enter Age Year">
+</span>
+      <br><br>
+      <label>Result:</label>
+     <input type="text" id="res" placeholder="" step="any" readonly>
+     <input type="text" id="Year" step="any" readonly placeholder="Age">
+      <br><br>
+ 
+  <button onclick="Check()" id="btn" >Check</button>
+
+</div>
+
+</body>
+<script >
+    function Check() {
+  var  dn= document.getElementById("Age").value;
+    var dt = new Date();
+  var dty = dt.getFullYear();
+    var dtn = parseInt(dty);
+    var dtt = parseInt(dn);
+ var result = dtn- dn; 
+   document.getElementById("Year").value = result +"'Year'";
+   if(result>=18){
+       var res = "Your Are Eligible Person ";
+       document.getElementById("Year").style.backgroundColor = "orange";
+     
+       
+   }
+   else{
+       res = "Your Are Not Eligible Person"
+   }
+   document.getElementById("res").value = res;
+ 
+}
+
+</script>
+</html>
