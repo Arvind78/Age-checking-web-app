@@ -42,23 +42,21 @@
     var dtt = parseInt(dn);
  var result = dtn- dn; 
    document.getElementById("Year").value = result +"'Year'";
+        
     
       var res;  
    if(result>=18){
         res = "Your Are Eligible Person ";
        document.getElementById("Year").style.backgroundColor = "orange";
        
-      
+       res ="";
        
        
    }
    else{
        res = "Your Are Not Eligible Person"
-   }
-         if(dn==""){
-          res ="";
-               document.getElementById("Year").value ="";
-        }   
+       res="";
+   }  
    document.getElementById("res").value = res;
  
 }
